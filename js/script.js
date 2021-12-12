@@ -155,7 +155,7 @@ const actValidator = () => {
 }
 const cardValidator = () => {
     const cardValue = cardNum.value;
-    // This checks between Visa, Amex, Mastercard, Discover, Diners Club, and JCB cards
+    // This checks between Visa, Amex, Mastercard, Discover, Diners Club, and JCB cards(found online from W3resource https://www.w3resource.com/javascript-exercises/javascript-regexp-exercise-2.php)
     // Varifying they all start with the correct digit(s), and have the correct numeric length. 
     // I would have loved to add HTML to the project to show card type text when detected, but alas.
     const validCard = /^(?:(4[0-9]{12}(?:[0-9]{3})?)|(5[1-5][0-9]{14})|(6(?:011|5[0-9]{2})[0-9]{12})|(3[47][0-9]{13})|(3(?:0[0-5]|[68][0-9])[0-9]{11})|((?:2131|1800|35[0-9]{3})[0-9]{11}))$/.test(cardValue);
